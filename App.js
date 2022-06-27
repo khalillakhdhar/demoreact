@@ -1,19 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet,Image, Text, View } from 'react-native';
+import PropState from './propState';
 import Second from './second';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Bienvenu à l'application</Text>
+      <Text>Bienvenu à l'application</Text> 
       <View>
       <Image source={{
                     uri: 'https://avatars.githubusercontent.com/u/12435165?v=4',
                 }}
                     style={{ width: 200, height: 200 }}></Image>
       </View>
-      <View><Second user="khalil"></Second></View>
+      <View><PropState message="react native is awesome"></PropState></View>
+      <View>
+        <Second user="khalil"></Second>
+      </View>
 
     </View>
 
