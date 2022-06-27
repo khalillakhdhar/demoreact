@@ -6,7 +6,7 @@ import Second from './second';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Welcome to my react application</Text>
+      <Text>Bienvenu à l'application</Text>
       <View>
       <Image source={{
                     uri: 'https://avatars.githubusercontent.com/u/12435165?v=4',
