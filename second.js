@@ -16,7 +16,11 @@ class Second extends Component {
     }
     updateAge()
     {
-        this.setState({age:33})
+        //console.log("pressed"); (verification)
+
+        this.setState({age:33}); // possible (state => variable )
+        //this.props.user="teste"; 
+        // props est une constante de l'environnement (this)
     }
     
   render() {
@@ -26,7 +30,7 @@ class Second extends Component {
             <Text>Nom:  {this.props.user}</Text>
         </View>
         <View>
-            <Text onClick={this.updateAge}>Age: {this.state.age}</Text>
+            <Text onPress={this.updateAge}>Age: {this.state.age}</Text>
 
         </View>
         <View>
