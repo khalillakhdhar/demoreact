@@ -1,13 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,Image, Text, View } from 'react-native';
+import Second from './second';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Welcome to my react application</Text>
+      <View>
+      <Image source={{
+                    uri: 'https://avatars.githubusercontent.com/u/12435165?v=4',
+                }}
+                    style={{ width: 200, height: 200 }}></Image>
+      </View>
+      <View><Second user="khalil"></Second></View>
+
     </View>
+
   );
 }
 
