@@ -8,7 +8,8 @@ class Second extends Component {
         this.state={
             age: 30,
             address:'Tunisie',
-            telephone:'+216999111'
+            telephone:'+216999111',
+            profession:'développeur'
         }
         this.updateAge=this.updateAge.bind(this);
     
@@ -38,6 +39,9 @@ class Second extends Component {
         </View>
         <View>
             <Text>Telephone: {this.state.telephone}</Text>
+        </View>
+        <View>
+            <Text>Profession: {this.state.profession}</Text>
         </View>
 
         </>
